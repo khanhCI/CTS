@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục Tỉnh/TP</title>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="sidebar">
+        <div class="navigation">
+            <div class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 24 24"
+                        style=" fill:#000000;">
+                    <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z">
+                    </path>
+                </svg>
+            </div>
+            <ul>
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        <div class="link-icon">
+                            <img src="./images/logo/Home.svg" alt="Home">
+                        </div>
+                        <div class="link-text">Trang chủ</div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        <div class="link-icon">
+                            <img src="./images/logo/Document.svg" alt="Home">
+                        </div>
+                        <div class="link-text">Danh mục</div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        <div class="link-icon">
+                        </div>
+                        <div class="link-text">Danh mục Tỉnh/TP</div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        <div class="link-icon">
+                            
+                        </div>
+                        <div class="link-text">Danh mục Quận/Huyện</div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="item-link">
+                        <div class="link-icon">
+                            
+                        </div>
+                        <div class="link-text">Danh mục Trường</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="main-header">
+            <div class="header-taskbar">
+                <div class="task-input taskbar-city">
+                    <label>Tên Tỉnh/TP</label>
+                    <input type="text" placeholder="Nhập tên tỉnh/tp cần tìm">
+                </div>
+
+                <div class="task-input taskbar-status">
+                    <label>Trạng thái</label>
+                    <select name="status">
+                        <option value="Kích hoạt">Kích hoạt</option>
+                        <option value="Bỏ kích hoạt">Bỏ kích hoạt</option>
+                    </select>
+                </div>
+
+                <div class="task-btn search-btn">
+                    <img src="./images/logo/filter.svg" alt="filter">
+                    Tìm kiếm
+                </div>
+
+                <div class="task-btn add-btn">
+                    <img src="./images/logo/plus.svg" alt="search">
+                    Thêm mới
+                </div>
+
+                <div class="task-btn print-btn">
+                    <img src="./images/logo/download.svg" alt="print">
+                    Xuất dữ liệu
+                </div>
+            </div>
+
+            <div class="header-info">
+                <div class="info-avt">
+                    <img src="./images/logo/unsplash_TACdQo62To0.svg" alt="avatar">
+                </div> 
+
+                <div class="info-noti">
+                    <img src="./images/logo/clarity_notification-solid.svg" alt="notification">
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div> 
+
+        <div class="main-content">
+            <div class="content-header">
+                <div class="header header-number">STT</div>
+                <div class="header header-city">Tên Tỉnh/TP
+                    <img src="./images/logo/sort.svg" alt="sort">
+                </div>
+                <div class="header header-nation">Quốc gia
+                    <img src="./images/logo/sort.svg" alt="sort">
+                </div>
+                <div class="header header-status">Trạng thái
+                    <img src="./images/logo/sort.svg" alt="sort">
+                </div>
+                <div class="header header-create">Người tạo
+                    <img src="./images/logo/sort.svg" alt="sort">
+                </div>
+                <div class="header header-date-create">Ngày tạo
+                    <img src="./images/logo/sort.svg" alt="sort">
+                </div>
+                <div class="header header-modifier">Người sửa
+                    <img src="./images/logo/sort.svg" alt="sort">
+                </div>
+                <div class="header header-last-modify">Ngày sửa cuối
+                    <img src="./images/logo/sort.svg" alt="sort">
+                </div>
+                <div class="header"></div>
+            </div>
+
+            <div class="content-main">
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="main-item">
+                    <div class="item item-number">01</div>
+                    <div class="item item-city">Hà Nội</div>
+                    <div class="item item-nation">Việt Nam</div>
+                    <div class="item item-status">Bỏ kích hoạt</div>
+                    <div class="item item-create">Admin</div>
+                    <div class="item item-date-create">13/01/2022 09:19</div>
+                    <div class="item item-modifier">Admin</div>
+                    <div class="item item-last-modify">13/01/2022 09:19</div>
+                    <div class="item item-icon">
+                        <div class="icon-holder">
+                            <img src="./images/logo/Edit.svg" alt="Edit">
+                        </div>
+                        <div class="icon-holder">
+                            <img src="./images/logo/un-lock.svg" alt="un-lock">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-footer">
+                <div class="footer-item">1</div>
+                <div class="footer-item"><</div>
+                <div class="footer-item">2</div>
+                <div class="footer-item">></div>
+                <div class="footer-item">3</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/60c085dbff.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
