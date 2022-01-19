@@ -290,6 +290,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
 }
 .main .main-content .content-footer .footer-item:not(:last-child) {
   margin-right: 1.84px;
@@ -336,6 +337,146 @@
     height: 35px;
   }
 }
+.add-modal {
+  margin: auto;
+  padding: 32px 39px 0px 31px;
+  width: 792px;
+  height: 502px;
+  border-radius: 56px;
+  background: #fff;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.add-modal .modal-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #272727;
+  text-align: center;
+  margin-bottom: 42px;
+}
+.add-modal .modal-close {
+  position: absolute;
+  top: 5%;
+  right: 39px;
+}
+.add-modal .modal-input {
+  margin-bottom: 28px;
+}
+.add-modal .modal-input .input label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #272727;
+}
+.add-modal .modal-input .input input,
+.add-modal .modal-input .input select {
+  display: block;
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 0px 1px #B8BDC6;
+  border: none;
+  outline: none;
+  padding: 14px 0 11px 19px;
+}
+.add-modal .modal-input .input input option,
+.add-modal .modal-input .input select option {
+  font-size: 18px;
+}
+.add-modal .modal-input .input ::-moz-placeholder {
+  font-size: 18px;
+  color: #283446;
+  opacity: 0.5;
+}
+.add-modal .modal-input .input :-ms-input-placeholder {
+  font-size: 18px;
+  color: #283446;
+  opacity: 0.5;
+}
+.add-modal .modal-input .input ::placeholder {
+  font-size: 18px;
+  color: #283446;
+  opacity: 0.5;
+}
+.add-modal .modal-input .input-country {
+  margin-bottom: 26px;
+}
+.add-modal .modal-status {
+  margin-bottom: 37px;
+}
+.add-modal .modal-status label {
+  font-size: 18px;
+  font-weight: 500;
+  color: #272727;
+}
+.add-modal .modal-status .status-box {
+  width: 142px;
+  height: 48px;
+  padding: 10px 12px 14px 13px;
+  color: #fff;
+  background: #2EBF34;
+  border-radius: 8px;
+  font-size: 18px;
+  border: none;
+  box-shadow: inset 0px 0px 0px 1px #536DFD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-modal .modal-btn {
+  text-align: center;
+}
+.add-modal .modal-btn button {
+  margin: 0 auto;
+  width: 214px;
+  height: 64px;
+  border: none;
+  outline: none;
+  padding: 21px 54px 20px 52px;
+  color: #fff;
+  background: #536DFD;
+  border-radius: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.decide-modal {
+  width: 625px;
+  height: 296px;
+  border-radius: 56px;
+  background: #fff;
+  margin: 0 auto 2rem;
+  padding: 47px 40px 40px;
+}
+.decide-modal .modal-title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 43px;
+}
+.decide-modal .modal-btn {
+  display: flex;
+  justify-content: space-around;
+}
+.decide-modal .modal-btn .btn {
+  width: 214px;
+  height: 64px;
+  outline: none;
+  border: none;
+  border-radius: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+.decide-modal .modal-btn .btn-agree {
+  background: #8A8A8E;
+}
+.decide-modal .modal-btn .btn-back {
+  background: #536DFD;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
