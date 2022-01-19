@@ -278,6 +278,9 @@
 .main .main-content .content-main .main-item .item-icon .icon-holder img {
   width: 20px;
 }
+.main .main-content .content-main .main-item:hover {
+  background: #F1F1F1;
+}
 .main .main-content .content-footer {
   padding: 19px 27px 19px 0;
   display: flex;
